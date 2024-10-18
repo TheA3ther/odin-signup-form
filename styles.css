@@ -1,3 +1,7 @@
+:root * {
+    font-family: "Roboto", sans-serif;
+}
+
 .container {
     display: flex;
 
@@ -8,28 +12,45 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 600px) {
-    #base {
-        flex-direction: column;
-    }
-}
-
 #image-block {
     background-color: yellow;
     flex: 4 1 0;
 }
 
 #form-block {
-    background-color: green;
+    background-color: rgb(31, 34, 44);
     flex: 6 1 0;
+    padding: 5rem;
+}
+
+label, p, h1, h3, legend {
+    color: white;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+form {
+    margin: 3rem;
 }
 
 fieldset {
     border: none;
 }
 
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 label {
     display: block;
+    margin: 0.5rem;
+}
+
+form input, form button {
+    color: black;
 }
 
 #footer {
@@ -41,4 +62,14 @@ label {
     height: 5vh;
     background-color: white;
     bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #base {
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
 }
