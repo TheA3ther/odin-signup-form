@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+
+}
+
+#base {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    #base {
+        flex-direction: column;
+    }
+}
+
+#base>* {
+    height: inherit;
+}
+
+#image-block {
+    background-color: yellow;
+    width: 40vw;
+}
+
+#form-block {
+    background-color: green;
+    width: 60vw;
+}
