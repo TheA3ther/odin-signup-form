@@ -7,14 +7,17 @@
 
 }
 
-#base {
-    width: 100vw;
-    height: 100vh;
+#base > * {
+    min-height: 100vh;
 }
 
 #image-block {
     background-color: yellow;
     flex: 4 1 0;
+}
+
+img {
+    height: max(10rem, 1000px);
 }
 
 #form-block {
@@ -35,8 +38,15 @@ form {
     margin: 3rem;
 }
 
+#fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 fieldset {
-    border: none;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 legend {
@@ -45,23 +55,26 @@ legend {
 }
 
 label {
-    display: block;
+    display: inline-block;
+    width: 9rem;
     margin: 0.5rem;
+}
+
+form p {
+    white-space: nowrap;
 }
 
 form input, form button {
     color: black;
 }
 
-#footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100vw;
-    height: 5vh;
-    background-color: white;
-    bottom: 0;
+form button {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+input {
+    width: 20rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -71,5 +84,9 @@ form input, form button {
 
     h1{
         font-size: 3rem;
+    }
+
+    #image-block{
+        min-height: 20vh;
     }
 }
