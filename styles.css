@@ -44,6 +44,23 @@
 
 #form-block h3 {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
+}
+
+#form-block form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-input {
+    margin: 2rem 2rem 0rem 0rem;
+}
+
+.label-input label {
+    font-size: 1.2rem;
+}
+
+.label-input input {
+    width: min(40rem, 50vw);
 }
