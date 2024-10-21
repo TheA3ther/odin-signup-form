@@ -2,3 +2,28 @@
     font-family: "Roboto", sans-serif;
 }
 
+#image-block {
+    background-color: pink;
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-block img {
+    width: 40rem;
+    height: 40rem;
+    min-width: 40rem;
+    min-height: 40rem;
+}
+
+#form-block {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 60vw;
+    background-color: purple;
+}
