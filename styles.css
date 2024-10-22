@@ -34,6 +34,7 @@
     padding: 3rem;
     white-space: pre-line;
     overflow-y: auto;
+    align-items: center;
 }
 
 #form-block h1 {
@@ -50,17 +51,44 @@
 
 #form-block form {
     display: flex;
-    flex-wrap: wrap;
+    width: 28rem;
+    border-radius: 20px;
+    padding: 1rem 0 2rem 0;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px pink;
+}
+
+#form-block button {
+    margin-top: 2rem;
+    background-color: pink;
+    border: none;
+    border-radius: 15px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+}
+
+#form-block button:active {
+    filter:brightness(70%);
+    transform: translateY(1px);
 }
 
 .label-input {
-    margin: 2rem 2rem 0rem 0rem;
+    margin: .5rem 0rem .5rem 0rem;
 }
 
 .label-input label {
     font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: .5rem;
 }
 
 .label-input input {
-    width: min(40rem, 50vw);
+    width: max(20rem, 20vw);
+    border-radius: 15px;
+    padding: .3rem 1rem;
 }
