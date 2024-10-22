@@ -64,7 +64,7 @@
 
 #image-overlay h3 {
     text-wrap: nowrap;
-    margin-top: 1rem;
+    vertical-align: middle;
     font-size: 3rem;
     font-weight: 600;
 }
